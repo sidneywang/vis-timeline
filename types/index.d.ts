@@ -232,7 +232,7 @@ export type TimelineOptionsHiddenDatesType = TimelineHiddenDateOption | Timeline
 export type TimelineOptionsItemsAlwaysDraggableType = boolean | TimelineItemsAlwaysDraggableOption;
 export type TimelineOptionsMarginType = number | TimelineMarginOption;
 export type TimelineOptionsOrientationType = string | TimelineOrientationOption;
-export type TimelineOptionsSnapFunction = (date: Date, scale: string, step: number) => Date | number;
+export type TimelineOptionsSnapFunction = (date: Date, scale: string, step: number, position: 'start' | 'end' | 'other' | undefined) => Date | number;
 export type TimelineOptionsSnapType = null | TimelineOptionsSnapFunction;
 export type TimelineOptionsTemplateFunction = (item?: any, element?: any, data?: any) => string | HTMLElement;
 export type TimelineOptionsComparisonFunction = (a: any, b: any) => number;
